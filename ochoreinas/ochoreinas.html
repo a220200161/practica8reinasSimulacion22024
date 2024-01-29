@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocho Reinas</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body onload="carga()">
+    <div class="container m-auto bg-1">
+    <header class="header p-5px bg-2">
+        <h2>El juego de las ocho "damas"</h2><img src="./img/notAQueen.png" alt="Hola bella dama" class="h-100px w-100px">
+    </header>
+    <div class="main w-97_5per h-97_5per m-auto vertical p-5px bg-4">
+        <table class="tablero">
+            <tr>
+                <td id="0*0" class="" onclick="colocarReina(this.id)"></td>
+                <td id="0*1" class="" onclick="colocarReina(this.id)"></td>
+                <td id="0*2" class="" onclick="colocarReina(this.id)"></td>
+                <td id="0*3" class="" onclick="colocarReina(this.id)"></td>
+                <td id="0*4" class="" onclick="colocarReina(this.id)"></td>
+                <td id="0*5" class="" onclick="colocarReina(this.id)"></td>
+                <td id="0*6" class="" onclick="colocarReina(this.id)"></td>
+                <td id="0*7" class="" onclick="colocarReina(this.id)"></td>
+            </tr>
+            <tr>
+                <td id="1*0" class="" onclick="colocarReina(this.id)"></td>
+                <td id="1*1" class="" onclick="colocarReina(this.id)"></td>
+                <td id="1*2" class="" onclick="colocarReina(this.id)"></td>
+                <td id="1*3" class="" onclick="colocarReina(this.id)"></td>
+                <td id="1*4" class="" onclick="colocarReina(this.id)"></td>
+                <td id="1*5" class="" onclick="colocarReina(this.id)"></td>
+                <td id="1*6" class="" onclick="colocarReina(this.id)"></td>
+                <td id="1*7" class="" onclick="colocarReina(this.id)"></td>
+            </tr>
+            <tr>
+                <td id="2*0" class="" onclick="colocarReina(this.id)"></td>
+                <td id="2*1" class="" onclick="colocarReina(this.id)"></td>
+                <td id="2*2" class="" onclick="colocarReina(this.id)"></td>
+                <td id="2*3" class="" onclick="colocarReina(this.id)"></td>
+                <td id="2*4" class="" onclick="colocarReina(this.id)"></td>
+                <td id="2*5" class="" onclick="colocarReina(this.id)"></td>
+                <td id="2*6" class="" onclick="colocarReina(this.id)"></td>
+                <td id="2*7" class="" onclick="colocarReina(this.id)"></td>
+            </tr>
+            <tr>
+                <td id="3*0" class="" onclick="colocarReina(this.id)"></td>
+                <td id="3*1" class="" onclick="colocarReina(this.id)"></td>
+                <td id="3*2" class="" onclick="colocarReina(this.id)"></td>
+                <td id="3*3" class="" onclick="colocarReina(this.id)"></td>
+                <td id="3*4" class="" onclick="colocarReina(this.id)"></td>
+                <td id="3*5" class="" onclick="colocarReina(this.id)"></td>
+                <td id="3*6" class="" onclick="colocarReina(this.id)"></td>
+                <td id="3*7" class="" onclick="colocarReina(this.id)"></td>
+            </tr>
+            <tr>
+                <td id="4*0" class="" onclick="colocarReina(this.id)"></td>
+                <td id="4*1" class="" onclick="colocarReina(this.id)"></td>
+                <td id="4*2" class="" onclick="colocarReina(this.id)"></td>
+                <td id="4*3" class="" onclick="colocarReina(this.id)"></td>
+                <td id="4*4" class="" onclick="colocarReina(this.id)"></td>
+                <td id="4*5" class="" onclick="colocarReina(this.id)"></td>
+                <td id="4*6" class="" onclick="colocarReina(this.id)"></td>
+                <td id="4*7" class="" onclick="colocarReina(this.id)"></td>
+            </tr>
+            <tr>
+                <td id="5*0" class="" onclick="colocarReina(this.id)"></td>
+                <td id="5*1" class="" onclick="colocarReina(this.id)"></td>
+                <td id="5*2" class="" onclick="colocarReina(this.id)"></td>
+                <td id="5*3" class="" onclick="colocarReina(this.id)"></td>
+                <td id="5*4" class="" onclick="colocarReina(this.id)"></td>
+                <td id="5*5" class="" onclick="colocarReina(this.id)"></td>
+                <td id="5*6" class="" onclick="colocarReina(this.id)"></td>
+                <td id="5*7" class="" onclick="colocarReina(this.id)"></td>
+            </tr>
+            <tr>
+                <td id="6*0" class="" onclick="colocarReina(this.id)"></td>
+                <td id="6*1" class="" onclick="colocarReina(this.id)"></td>
+                <td id="6*2" class="" onclick="colocarReina(this.id)"></td>
+                <td id="6*3" class="" onclick="colocarReina(this.id)"></td>
+                <td id="6*4" class="" onclick="colocarReina(this.id)"></td>
+                <td id="6*5" class="" onclick="colocarReina(this.id)"></td>
+                <td id="6*6" class="" onclick="colocarReina(this.id)"></td>
+                <td id="6*7" class="" onclick="colocarReina(this.id)"></td>
+            </tr>
+            <tr>
+                <td id="7*0" class="" onclick="colocarReina(this.id)"></td>
+                <td id="7*1" class="" onclick="colocarReina(this.id)"></td>
+                <td id="7*2" class="" onclick="colocarReina(this.id)"></td>
+                <td id="7*3" class="" onclick="colocarReina(this.id)"></td>
+                <td id="7*4" class="" onclick="colocarReina(this.id)"></td>
+                <td id="7*5" class="" onclick="colocarReina(this.id)"></td>
+                <td id="7*6" class="" onclick="colocarReina(this.id)"></td>
+                <td id="7*7" class="" onclick="colocarReina(this.id)"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="sidebar p-5px bg-3">
+        <p>Piezas restantes: <b id="res"></b></p>
+        <p>Piezas colocadas: <b id="col"></b></p>
+        <button onclick="reinicio()" class="bg-5 btn">Reiniciar</button>
+    </div>
+</div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
